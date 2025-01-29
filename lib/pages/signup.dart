@@ -10,6 +10,17 @@ class Signup extends StatefulWidget {
 class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(children: [
+        Text('Signup Page'),
+        GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: const Text('Go to Login Page')
+        )
+      ])
+
+    );
   }
 }
